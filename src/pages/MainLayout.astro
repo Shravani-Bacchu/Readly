@@ -1,0 +1,30 @@
+---
+const { title = "Book App" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+
+    <!-- Global styles -->
+    <link rel="stylesheet" href="/src/styles/global.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a href="/" class="logo">📚 My Reviews</a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/submit">Add Review</a>
+        <a href="/search">Search Books</a>
+      </div>
+    </nav>
+
+    <main class="content">
+      <slot />
+    </main>
+  </body>
+</html>

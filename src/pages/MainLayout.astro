@@ -1,5 +1,5 @@
 ---
-const { title = "Book App" } = Astro.props;
+const { title = "Readly" } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -8,20 +8,17 @@ const { title = "Book App" } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
-
     <!-- Global styles -->
     <link rel="stylesheet" href="/src/styles/global.css" />
   </head>
-
   <body>
-    <nav class="navbar">
-      <a href="/" class="logo">📚 My Reviews</a>
-      <div class="nav-links">
-        <a href="/">Home</a>
-        <a href="/submit">Add Review</a>
-        <a href="/search">Search Books</a>
-      </div>
-    </nav>
+<header class="flex items-center justify-center gap-12 bg-brandBlue py-4 text-white">
+  <h1 class="text-2xl font-bold">My Reviews</h1>
+  <nav class="flex gap-6">
+    <a href="/">Home</a>
+    <a href="/reviews">Reviews</a>
+  </nav>
+</header>
 
     <main class="content">
       <slot />

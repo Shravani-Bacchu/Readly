@@ -3,3 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 @custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: "Inter";
+  src: url("/public/SlackOnChristmasDemoRegular-0vGj4.ttf") format("ttf");
+  font-display: swap;
+}
